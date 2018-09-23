@@ -6,6 +6,7 @@ def oxford_comma(array)
     return array.join
   elsif array.size > 2
     array.join(", ")
-    return array.insert(-2, ' and ')
+    array.insert(-2, ' and ')
+    return array.join
   end
 end
